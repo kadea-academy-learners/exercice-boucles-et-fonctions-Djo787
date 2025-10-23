@@ -1,4 +1,7 @@
 // Énoncé : Créez une fonction nommée direBonjour qui affiche "Bonjour le monde" dans la console.
+
+const { co } = require("co")
+
 /*
   Énoncé :
   Créez une fonction nommée `direBonjour` qui affiche "Bonjour le monde" dans la console.
@@ -11,8 +14,9 @@
   indiquer que le code n'est pas encore implémenté.
 */
 function direBonjour() {
-  // Exercice non implémenté : l'étudiant doit afficher "Bonjour le monde".
-  // Placeholder neutre : ne fait rien et retourne undefined.
+ console.log("Bonjour le monde");
+
+ direBonjour();// Appel de la fonction pour afficher le message
 }
 
 // Ne pas modifier la ligne ci-dessous

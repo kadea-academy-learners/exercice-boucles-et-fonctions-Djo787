@@ -13,8 +13,19 @@
 function estImpair(n) {
   // Exercice non implémenté : vérifier si n est impair
   // Placeholder neutre : retourne null pour indiquer non-implémentation
-  return null;
+    if (typeof n !== 'number') {
+    return null; // Entrée invalide
+  }
+
+  // Vérifier si n est impair
+  if (n % 2 !== 0) {
+    return true; // n est impair
+  } else {
+    return false; // n est pair
+  }
 }
+
+console.log(estImpair(3)); // true
 
 // Ne pas modifier la ligne ci-dessous
 module.exports = { estImpair };

@@ -11,8 +11,11 @@
   Placeholder : levée d'erreur pour indiquer que l'exercice doit être implémenté.
 */
 function maxDeTrois(a, b, c) {
-  // Placeholder neutre : retourne null pour indiquer non-implémentation
-  return null;
+  function maxDeTrois(a, b, c) {
+  if ([a, b, c].some(v => typeof v !== 'number' || !Number.isFinite(v))) return null;
+  if (a === b && b === c) return "Les trois nombres sont égaux";
+  return Math.max(a, b, c);
+}
 }
 
 // Ne pas modifier la ligne ci-dessous

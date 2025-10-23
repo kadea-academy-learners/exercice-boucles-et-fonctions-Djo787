@@ -10,9 +10,14 @@
     Placeholder : version neutre (ne log rien) pour permettre l'exécution des tests
     sans lever d'exception. L'étudiant doit remplacer la fonction par son implémentation.
   */
-  function compteARebours() {
+  function compteARebours(n) {
     // Placeholder neutre : ne fait rien
+    for (let i = n; i >= 1; i--) {
+      console.log(i);
+    }
   }
+
+  compteARebours(10); // Appel de la fonction pour afficher le compte à rebours
 
   // Ne pas modifier la ligne ci-dessous
   module.exports = { compteARebours }
